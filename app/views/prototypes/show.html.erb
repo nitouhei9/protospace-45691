@@ -13,10 +13,11 @@
         </div>
       <% end %>
       <%# // プロトタイプの投稿者とログインしているユーザーが同じであれば上記を表示する %>
-      <div class="prototype__image">
-        <%= image_tag @prototype.image, class: :prototype__image %>
-      </div>
+
       <div class="prototype__body">
+        <div class="prototype__image">
+          <%= image_tag @prototype.image, class: :prototype__image %>
+        </div>
         <div class="prototype__detail">
           <p class="detail__title">キャッチコピー</p>
           <p class="detail__message">
